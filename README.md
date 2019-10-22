@@ -1,5 +1,9 @@
 # env-args
 
+Useful when deploying programs where passing environment variables is
+more convenient and more secure than passing arguments to the process.
+
+
 Add to your `stack.yaml`:
 
 ```yaml
@@ -19,7 +23,3 @@ Wrap `withEnvArgs "YOURPREFIX_"` around your arguments parser
 * `YOURPREFIX_arg1=blah` for `--arg1` `blah` (drops the prefix and adds `--`).
 * `YOURPREFIX_arg_foo` for `--arg-foo` (replaces `_` with `-`)
 * `YOURPREFIX_ARG_FOO` for `--arg-foo` (auto-lower-casing)
-
-Which is useful when deploying programs where passing environment
-variables is more convenient and more secure than passing arguments to
-the process.
