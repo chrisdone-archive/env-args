@@ -16,7 +16,7 @@ import System.EnvArgs
 Wrap `withEnvArgs "YOURPREFIX_"` around your arguments parser
 (e.g. optparse-applicative), and now you can pass
 
-* `YOURPREFIX_arg1` for `--arg1` (drops the prefix and adds `--`).
+* `YOURPREFIX_arg1=blah` for `--arg1` `blah` (drops the prefix and adds `--`).
 * `YOURPREFIX_arg_foo` for `--arg-foo` (replaces `_` with `-`)
 * `YOURPREFIX_ARG_FOO` for `--arg-foo` (auto-lower-casing)
 
