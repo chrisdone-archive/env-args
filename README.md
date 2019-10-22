@@ -1,5 +1,14 @@
 # env-args
 
+Add to your `stack.yaml`:
+
+```yaml
+- github: chrisdone/env-args
+  commit: bfcad7b70c217218fd512bf8dbd90bead51e9385
+```
+
+And in your `app/main.hs`:
+
 ```haskell
 import System.EnvArgs
 ```
