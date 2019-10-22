@@ -1,0 +1,21 @@
+name:                env-args
+version:             0.1.0.0
+synopsis:            Source program arguments from the environment in a predictable way
+description:         https://github.com/chrisdone/env-args#readme
+homepage:            https://github.com/chrisdone/env-args#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Chris Done
+maintainer:          chrisdone@gmail.com
+copyright:           2019 Chris Done
+category:            Development
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  ghc-options:         -Wall
+  exposed-modules:     System.EnvArgs
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
